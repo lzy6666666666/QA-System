@@ -10,3 +10,6 @@ merge (from)-[r:actedin{pid:toInteger(line.pid),mid:toInteger(line.mid)}]->(to)
 
 //导入关系 电影是什么类型 == 1对多 LOAD CSV WITH HEADERS FROM "file:///movie_to_genre.csv" AS line match (from:Movie{mid:toInteger(line.mid)}),(to:Genre{gid:toInteger(line.gid)})
 merge (from)-[r:is{mid:toInteger(line.mid),gid:toInteger(line.gid)}]->(to)
+
+
+//1
