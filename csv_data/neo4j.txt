@@ -1,5 +1,6 @@
 neo4j.txt
 
+
 //导入节点 电影类型 == 注意类型转换 LOAD CSV WITH HEADERS FROM "file:///genre.csv" AS line MERGE (p:Genre{gid:toInteger(line.gid),name:line.gname})
 
 //导入节点 演员信息 LOAD CSV WITH HEADERS FROM 'file:///person.csv' AS line MERGE (p:Person { pid:toInteger(line.pid),birth:line.birth, death:line.death,name:line.name, biography:line.biography, birthplace:line.birthplace})
