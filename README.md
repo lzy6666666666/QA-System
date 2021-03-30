@@ -12,4 +12,7 @@ QA.py可以运行于普通命令行，若结合微信公众号则需运行tornad
 1.在官网下载neo4j社区版并根据相关教程配置环境
 2.导入csv_data文件
 具体方式为在neo4j目录找到import目录，并将csv_data数据复制到目录下
-并确保之前
+并确保之前无图数据 即graph.db文件，如果有删除再导入，导入前需在命令行输入neo4j service install
+并且启动neo4j服务 start neo4j
+登录http://localhost:7474/browser/
+连接数据图设置好密码，在命令行导入csv_data里txt文档的语句
