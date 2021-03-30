@@ -13,7 +13,7 @@ import tornado.web
 
 class wxStartHandler(tornado.web.RequestHandler):
     """
-    微信服务器签名验证和消息回复
+    微信服务器签名验证和消 息回复
     check_signature: 校验signature是否正确
     """
 
