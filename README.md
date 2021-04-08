@@ -22,3 +22,4 @@ QA.py可以运行于普通命令行，若结合微信公众号则需运行tornad
 并且启动neo4j服务 start neo4j
 登录http://localhost:7474/browser/
 连接数据图设置好密码，在命令行导入csv_data里txt文档的语句
+
