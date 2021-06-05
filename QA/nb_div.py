@@ -28,8 +28,10 @@ def getName(question):
             return 1
         else:
             return 2
-    # if re.match('罗旭辉', question) and re.match('傻逼', question):
-    #         return 1
+    if re.search('返校', question):
+        return 3
+    if re.search('肌肉山山',question):
+        return 4
     for w in words:
         print(w.word, w.flag)
         if w.flag == "nm" or w.flag == "nr":

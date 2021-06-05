@@ -1,4 +1,4 @@
-
+from Crawler.GetTime import getTime
 from py2neo import Graph
 
 
@@ -29,6 +29,32 @@ class Query:
             return final_answer
         if name == 2:
             final_answer = "华师石牌校区四大天王之一，收到的情书比山还要高"
+            return final_answer
+        if name == 3:
+            final_answer = "门岗: 石牌校区西门"\
+                "\n学号: 20172131110"\
+                "\n姓名: 李臻诣"\
+                "\n单位: 计算机学院"\
+                "\n电话: 13828207002"\
+                "\n"\
+                "\n【可通行】 请假获批，有效时段"\
+                "\n"\
+                "\n疫情防控关键时期，在校学生未经学校同意不得进出校园。"\
+                "\n"\
+                + getTime()
+            return final_answer
+        if name == 4:
+            final_answer = "门岗: 石牌校区西门" \
+                           "\n学号: 20172131003" \
+                           "\n姓名: 潘峰" \
+                           "\n单位: 计算机学院" \
+                           "\n电话: 15626460102" \
+                           "\n" \
+                           "\n【可通行】 请假获批，有效时段" \
+                           "\n" \
+                           "\n疫情防控关键时期，在校学生未经学校同意不得进出校园。" \
+                           "\n" \
+                           + getTime()
             return final_answer
         if number == 0:
             cql = f"match (m:Movie)-[]->() where m.title='{name}' return m.rating"

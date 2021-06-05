@@ -38,7 +38,7 @@ def receive_event(event, key):
         reply = "感谢您关注本智能问答小公众号！" \
                 "\n请输入所需询问有关电影的问题:" \
                 "\n例如:《龙兄虎弟》的评分/上映时间/简介/风格/类型/演员是谁 等等？" \
-                "\n"
+                "\n小破站已更新隐藏功能,dddd"
         return reply
     # 如果是点击菜单拉取消息事件
     elif event == 'CLICK':
